@@ -11,7 +11,7 @@ steps:
     
   - name: git-leak
     image: plugins/gitleaks
-    pull: if-not-exists
+    pull: never
 
   - name: scan
     image: plugins/drone-snyk
